@@ -63,13 +63,16 @@ If the total number of questions is zero (to avoid division by zero error), the 
 ![image](https://github.com/user-attachments/assets/5afabab0-c30d-432c-9a11-015205c2b186)  
 
 
-**d) Time Spent: How much time did the candidate spend on each section or question?**  
+**d) Time Spent: How much time did the candidate spend on each section or question?**   
+The "Total Time Taken (in seconds)" measure calculates the sum of all the time taken by the candidate across all questions. This measure gives the total duration, in seconds, that the candidate spent answering questions.
 ```Total Time Taken (in seconds) = SUM('Student performance'[Time Taken (Seconds)])```    
 
    
 
 **2. TOPIC SPECIFIC PERFORMANCE**    
-**Score by Topic: What is the candidate's score for each specific topic?**
+**a) Strengths and Weaknesses: Which topics did the candidate perform best in, and which did they struggle with?**  
+The "Strengths" measure identifies the topics where a candidate's score is 50% or higher. It concatenates the names of these topics into a single string, separated by commas. This measure helps to quickly identify and display the candidate's stronger areas based on their performance in different topics.  
+![image](https://github.com/user-attachments/assets/60c0421b-fc9f-4ca0-8d86-469c6650e604)
 
 
 
