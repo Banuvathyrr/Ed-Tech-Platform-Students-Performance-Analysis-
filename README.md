@@ -39,7 +39,7 @@ The dataset contains 1 csv file:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### DASHBOARD
 
-**1. OVERALL PERFORMANCE METRICS:**   
+**1. OVERALL PERFORMANCE METRICS**   
 
 **a) Total Score: What is the candidate's total score across all topics?**    
 The Score calculated column now directly converts the Boolean value into a numeric score, reducing complexity.  
@@ -64,37 +64,16 @@ If the total number of questions is zero (to avoid division by zero error), the 
 
 
 **d) Time Spent: How much time did the candidate spend on each section or question?**  
-```Total Time Taken (in seconds) = SUM('Student performance'[Time Taken (Seconds)])```  
+```Total Time Taken (in seconds) = SUM('Student performance'[Time Taken (Seconds)])```    
+
+   
+
+**2. TOPIC SPECIFIC PERFORMANCE**    
+**Score by Topic: What is the candidate's score for each specific topic?**
 
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Exploratory Data Analysis
 
-I have added 5 important pages.  
-1) Demographic insights  
-2) Consumer Preference
-3) Competition analysis
-4) Brand penetration
-5) Brand perception 
-
-
-
-**Demographic insights**   
-a) In Demographic report page, 4 cards were inserted to show Total respondents, Total number of cities, Total number of males and females.  
-b) A **Bar chart** shows total respondents for each city.  
-c) The **Pie chart** gives the percentage split of total respondents for each gender.  
-d) Stacked area chart shows the distribution of respondent count with respect to age
-e) Multi row card gives the count of total male and females in tier 1 and 2 cities
-
-**Consumer Preference**    
-a) In Consumer preference report page, % of respondents showing health concerns was shown with average taste experience as card  
-b) **Bar chart** displays the count of conumer frequency   
-c) **Horizontal bar chart** added to display the total respondents with respect to each marketing channel.    
-d) Count of each brand was shown using a bar chart  
-e) Typical consumption situation was shown using a funnel chart.  
-f) Total respondents for each brand with thier consume reason has been shown in the form of a Matrix.  
-  
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Results/ Findings
