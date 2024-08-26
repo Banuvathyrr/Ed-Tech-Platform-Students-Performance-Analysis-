@@ -72,7 +72,61 @@ The "Total Time Taken (in seconds)" measure calculates the sum of all the time t
 **2. TOPIC SPECIFIC PERFORMANCE**    
 **a) Strengths and Weaknesses: Which topics did the candidate perform best in, and which did they struggle with?**  
 The "Strengths" measure identifies the topics where a candidate's score is 50% or higher. It concatenates the names of these topics into a single string, separated by commas. This measure helps to quickly identify and display the candidate's stronger areas based on their performance in different topics.  
-![image](https://github.com/user-attachments/assets/60c0421b-fc9f-4ca0-8d86-469c6650e604)
+![image](https://github.com/user-attachments/assets/60c0421b-fc9f-4ca0-8d86-469c6650e604)  
+
+![image](https://github.com/user-attachments/assets/6d4bde53-1218-4c1d-a083-4779dc911cfa)  
+
+**b) Topic Mastery Level: How well does the candidate understand each topic? (e.g., Beginner, Intermediate, Advanced)**  
+The first DAX formula calculates the percentage of correct answers by dividing the number of correct answers by the total questions and multiplying by 100. The second DAX formula categorizes the mastery level based on this percentage, classifying it as "Advanced" for 80% or more, "Intermediate" for greater than 50% but less than 80%, and "Beginner" for 50% or less.  
+![image](https://github.com/user-attachments/assets/91fa2070-ebab-46e0-9a90-5e53e8bcfbde)  
+
+![image](https://github.com/user-attachments/assets/cb2b6dec-2849-4dc9-9d6d-93e1951d4c20)
+
+
+**4) COMPARATIVE ANALYSIS**
+**Comparison to Peers: How does the candidate's performance compare to the average performance of their peers?**  
+The first DAX formula computes the candidate’s average score by dividing their total score by the total number of questions.    
+![image](https://github.com/user-attachments/assets/2e8ed584-cdfa-40a1-9779-1933d3ae59f8)    
+The second DAX formula calculates the average score of other candidates by excluding the current candidate’s scores from the average calculation.  
+![image](https://github.com/user-attachments/assets/badd5066-ee7a-41c5-a519-7576cdc04f12)  
+This allows for comparison of a candidate’s performance against the average score of their peers.  
+
+**5) SKILL GAP IDENTIFICATION**  
+**a) Unaddressed Areas: Are there any topics that the candidate did not cover or answered very few questions on?**    
+The DAX measure Low Question Topics Measure identifies topics in the 'Student performance' table with fewer than 3 questions. It first counts the number of questions per topic, filters those with less than 3 questions, and then concatenates the names of these topics into a comma-separated string.   
+![image](https://github.com/user-attachments/assets/7630effe-ab6a-4511-bbe4-a4670052f562)  
+
+**b) Critical Skills Lacking: Which key skills or knowledge areas are most lacking based on incorrect answers?**  
+The DAX calculated column KeySkills assigns specific key skills to different topics in the 'Student performance' table. The SkillsforReview measure then creates a comma-separated list of these key skills for topics where the percentage of incorrect answers is 50% or more, helping to highlight areas needing review.
+
+![image](https://github.com/user-attachments/assets/c1e50ce9-d8bc-4eda-88f2-069bcd1b96fe)  
+![image](https://github.com/user-attachments/assets/f3de29b0-16ac-4490-9ad1-b6273caa4202)  
+
+**6. LEARNING PATH SUGGESTIONS**  
+The DAX measure Topics For Review identifies topics from the 'Student Performance' table where the average score is less than 50%. It calculates the average score for each topic by dividing the sum of scores by the count of question IDs, filters for topics with an average below 50%, and concatenates these topics into a comma-separated list for review.  
+![image](https://github.com/user-attachments/assets/bba11549-2bc5-47c6-a916-9db453fbe2a9)  
+The DAX calculated column Incorrect Answers counts the number of rows in the 'Student performance' table where the score is zero.   
+![image](https://github.com/user-attachments/assets/548b1952-a028-4c0c-be03-fd4252822d23)  
+The measure Percent Incorrect calculates the percentage of incorrect answers by dividing the number of incorrect answers by the total number of questions and multiplying by 100.  
+![image](https://github.com/user-attachments/assets/25438e99-3b0a-43fb-bda7-a2b661ecbcdf)  
+The calculated column Study Material assigns recommended study resources based on the topic, such as maps for Geography or storybooks for History  
+![image](https://github.com/user-attachments/assets/4d2cabfe-23ca-4400-98f3-808b06302edf)    
+The measure Study Materials to Refer generates a comma-separated list of study materials for topics where the percentage of incorrect answers is 50% or higher, aiding in targeted study efforts.  
+![image](https://github.com/user-attachments/assets/71264f7d-86aa-4505-8d28-423ff9b9ce5a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
