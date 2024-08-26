@@ -60,7 +60,11 @@ The Percentage Correct measure calculates the percentage of questions answered c
 **c) Accuracy Rate: What is the candidate's accuracy rate (correct answers vs. total attempts)?**  
 The "Accuracy rate" measure calculates the percentage of correct answers relative to the total number of questions. 
 If the total number of questions is zero (to avoid division by zero error), the measure returns 0.  
-![image](https://github.com/user-attachments/assets/5afabab0-c30d-432c-9a11-015205c2b186)
+![image](https://github.com/user-attachments/assets/5afabab0-c30d-432c-9a11-015205c2b186)  
+
+
+**d) Time Spent: How much time did the candidate spend on each section or question?**  
+```Total Time Taken (in seconds) = SUM('Student performance'[Time Taken (Seconds)])```  
 
 
 
