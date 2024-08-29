@@ -3,11 +3,7 @@
 
 
 ### Introduction 
-In the ever-evolving landscape of education, institutions and training centers must leverage data to optimize their outreach and enrollment strategies. This project, titled "Enhancing Student Enrollment Using Power BI," aims to utilize data analysis to improve student enrollment rates by understanding patterns in inquiries and identifying key factors that influence conversion.
-
-Through this project, we have analyzed a dataset containing 74 inquiries over a period of 141 days, focusing on various aspects such as weekly, monthly, and daily trends, age group preferences, course popularity, and the impact of prior coding experience on course interest. By leveraging Power BI, we have visualized these insights to create a comprehensive understanding of the data, enabling us to develop targeted strategies to enhance student engagement and increase enrollment.
-
-The findings from this analysis will provide actionable recommendations for improving follow-up processes, optimizing communication channels, addressing concerns about fees, tailoring course content to specific age groups, and enhancing overall course presentation. By applying these strategies, educational institutions can better meet the needs of prospective students and boost their enrollment rates.
+Ed-Tech platforms have transformed the educational landscape by offering interactive and personalized learning experiences. Analyzing student performance on these platforms focuses on evaluating student performance based on various metrics such as accuracy, speed, consistency, and confidence levels. By examining detailed question-by-question responses and overall topic proficiency, this study aims to provide insights into student learning patterns, identify key areas for improvement, and suggest targeted strategies to enhance educational outcomes.  
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Project Overview  
